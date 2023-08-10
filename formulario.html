@@ -29,12 +29,30 @@
     <input type="submit">
   </form>
 
-  <div>
+  <div id="lista-de-invitados">
     <h2>Lista de invitados</h2>
 
   </div>
 
-  <script src="../formulario.js"></script>
+  <script src="./formulario.js"></script>
 </body>
 
 </html>
+
+<!-- El script adjuntado tiene 2 ".", elimine 1 para adjuntarlo correctamente -->
+<!-- El query selector estaba con #from, pero en el html, se definio con la clase formulario. Entonces lo corregi por .formulario -->
+<!-- Se corrigio el preventdefault, estaba como prevent. -->
+<!-- El div para la lista de invitados no tiene ID, entonces, le agregue el ID  lista-de-invitados, ya que ese el nombre del id marcado en js-->
+<!-- Se corrige la edad edad > 18
+      && edad < 120) a edad >= 18
+      && edad <= 100) -->
+<!-- El nombre se repite 2 veces en la lista de invitados, comente linea 66 y 67 elementoLista.appendChild(spanNombre)
+  //elementoLista.appendChild(inputNombre) -->
+
+<!-- Los elementos //var botonBorrar = document.createElement("button")
+//botonBorrar.textContent = "Eliminar invitado"
+//botonBorrar.id = "boton-borrar"
+de la linea 33 a la 35, no los neceisto, ya que me esta creando un boton extra -->
+
+<!-- Oculte linea 38, ya que ese boton no lo neceito document.body.appendChild(botonBorrar); -->
+<!-- Se cambio el .added por .add en linea 58-->
